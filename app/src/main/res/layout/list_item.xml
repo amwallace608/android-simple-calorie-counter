@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/row_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:text="Food Name"
+        android:layout_marginStart="4dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameTxt"
+        android:text="Date: "
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        android:textColor="#424242"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/thumbnailImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/dateTxt"
+        android:src="@drawable/cherry"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+    
+    <TextView
+        android:id="@+id/caloriesTxt"
+        android:text="120"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/thumbnailImg"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/calTxt"
+        android:text="@string/cal_text"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/caloriesTxt"
+        android:layout_toEndOf="@+id/caloriesTxt"
+        android:layout_marginStart="0dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hasChild"
+        android:text=">"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

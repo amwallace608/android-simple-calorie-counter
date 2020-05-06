@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="16dp"
+    tools:context=".DisplayFoodActivity">
+    
+    <LinearLayout
+        android:id="@+id/displayFoodLinLayout"
+        android:background="@color/colorBlueAccent"
+        android:paddingBottom="12dp"
+        android:paddingTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/totalCalsTxt"
+            android:textColor="@android:color/white"
+            android:paddingEnd="10dp"
+            android:text="@string/food_total"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="|"
+            android:textColor="#ffee1d27"
+            android:textSize="27sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/totalItemsTxt"
+            android:textColor="#474444"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:text="@string/num_foods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/displayFoodLinLayout"
+        android:dividerHeight="2dp"
+        android:divider="@color/colorBlueAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</RelativeLayout>

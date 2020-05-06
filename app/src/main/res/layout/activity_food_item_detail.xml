@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorAccent"
+    tools:context=".FoodItemDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:id="@+id/detLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/carrot" />
+
+    <LinearLayout
+        android:id="@+id/detailLinLayout"
+        android:layout_below="@+id/detLogo"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/detFoodTxt"
+            android:text="FoodName"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/detCaloriesTxt"
+            android:text="Calories:"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detCaloriesValueTxt"
+            android:text="180"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detDateTxt"
+            android:text="Eaten on:"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/detShareBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_email_black_24dp"
+            android:paddingTop="25dp"
+            android:textStyle="bold"
+            android:text="@string/share_title"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
